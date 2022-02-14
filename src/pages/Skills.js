@@ -1,14 +1,8 @@
-import { Box, Center, Container, Wrap, WrapItem, Text, Image, Flex, SimpleGrid, CircularProgress, CircularProgressLabel, transition } from "@chakra-ui/react";
+import { Box, Center, Container, Text, Image, Flex, SimpleGrid, CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import React from "react";
 import { FaReact, FaDatabase, FaJs, FaCss3Alt, FaHtml5, FaNode } from 'react-icons/fa'
 import Banane from '../img/banane.jpg'
 import Animation from "../styles/Animation";
-import { motion } from "framer-motion";
-
-const spinTransition = {
-    loop: Infinity,
-    duration: 1
-}
 
 const Skills = () => {
     return (
@@ -18,47 +12,45 @@ const Skills = () => {
             </Box>
             <Animation>
                 <Box pb={8}>
-                    <Text fontSize='2xl' as='u' textUnderlineOffset={8} textDecorationColor="purple.300" textDecorationThickness={4}>Tech Skills</Text>
+                    <Text fontSize='2xl' as='u' textUnderlineOffset={8} textDecorationColor="purple.300" textDecorationThickness={4}>Compétences Techniques</Text>
                     <SimpleGrid pt={8} columns={2} spacing={10}>
                         <Box>
                             <Center>
-                                <motion.div animate={{rotate: 360}} transition={spinTransition}>
-                                    <CircularProgress size={150} value={70} color='blue.400'>
-                                        <CircularProgressLabel>70%</CircularProgressLabel>
-                                    </CircularProgress>
-                                </motion.div>
+                                <CircularProgress size={150} value={80} color='blue.400'>
+                                    <CircularProgressLabel>80%</CircularProgressLabel>
+                                </CircularProgress>
                             </Center>
                             <Flex direction='column'>
                                 <Center pt={2}>
                                     <FaReact size={40}/>
                                 </Center>
-                                <Text textAlign='center' fontSize='lg'>Lorem ipsum dolor siet amet</Text>
+                                <Text pt={2} textAlign='center' fontSize='lg'>ReactJs</Text>
                             </Flex>
                         </Box>
                         <Box>
                         <Center>
-                                <CircularProgress size={150} value={60} color='yellow.400'>
-                                    <CircularProgressLabel>60%</CircularProgressLabel>
+                                <CircularProgress size={150} value={65} color='yellow.400'>
+                                    <CircularProgressLabel>65%</CircularProgressLabel>
                                 </CircularProgress>
                             </Center>
                             <Flex direction='column'>
                                 <Center pt={2}>
                                     <FaJs size={40}/>
                                 </Center>
-                                <Text textAlign='center' fontSize='lg'>Lorem ipsum dolor siet amet</Text>
+                                <Text pt={2} textAlign='center' fontSize='lg'>ExpressJs</Text>
                             </Flex>
                         </Box>
                         <Box>
                         <Center>
-                                <CircularProgress size={150} value={65} color='red.400'>
-                                    <CircularProgressLabel>65%</CircularProgressLabel>
+                                <CircularProgress size={150} value={60} color='red.400'>
+                                    <CircularProgressLabel>60%</CircularProgressLabel>
                                 </CircularProgress>
                             </Center>
                             <Flex direction='column'>
                                 <Center pt={2}>
                                     <FaDatabase size={40}/>
                                 </Center>
-                                <Text textAlign='center' fontSize='lg'>Lorem ipsum dolor siet amet</Text>
+                                <Text pt={2} textAlign='center' fontSize='lg'>MongoDB</Text>
                             </Flex>
                         </Box>
                         <Box>
@@ -71,24 +63,20 @@ const Skills = () => {
                                 <Center pt={2}>
                                     <FaNode size={40}/>
                                 </Center>
-                                <Text textAlign='center' fontSize='lg'>Lorem ipsum dolor siet amet</Text>
+                                <Text pt={2} textAlign='center' fontSize='lg'>NodeJs</Text>
                             </Flex>
                         </Box>
                         <Box>
                         <Center>
                                 <CircularProgress size={150} value={100} color='orange.400'>
-                                    <CircularProgressLabel>
-                                        <Center>
-                                            <FaHtml5 size={40}/>
-                                        </Center>
-                                    </CircularProgressLabel>
+                                    <CircularProgressLabel>100%</CircularProgressLabel>
                                 </CircularProgress>
                             </Center>
                             <Flex direction='column'>
                                 <Center pt={2}>
                                     <FaHtml5 size={40}/>
                                 </Center>
-                                <Text textAlign='center' fontSize='lg'>Lorem ipsum dolor siet amet</Text>
+                                <Text pt={2} textAlign='center' fontSize='lg'>Html</Text>
                             </Flex>
                         </Box>
                         <Box>
@@ -101,7 +89,7 @@ const Skills = () => {
                                 <Center pt={2}>
                                     <FaCss3Alt size={40}/>
                                 </Center>
-                                <Text textAlign='center' fontSize='lg'>Lorem ipsum dolor siet amet</Text>
+                                <Text pt={2} textAlign='center' fontSize='lg'>Css</Text>
                             </Flex>
                         </Box>
                     </SimpleGrid>

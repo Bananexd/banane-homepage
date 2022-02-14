@@ -3,7 +3,6 @@ import NavBar from './components/NavBar';
 import Accueil from './pages/Accueil';
 import Portfolio from './pages/Portfolio';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 import Skills from './pages/Skills';
 
 const App = () => {
