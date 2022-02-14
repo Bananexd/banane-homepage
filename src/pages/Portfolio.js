@@ -1,4 +1,4 @@
-import { Box, Container, Text, Image, SimpleGrid, Divider, Center, Flex, Heading } from "@chakra-ui/react";
+import { Box, Container, Text, Image, SimpleGrid, Divider, Center, Flex } from "@chakra-ui/react";
 import React from "react";
 import Banane from "../img/banane.jpg"
 import Animation from "../styles/Animation";

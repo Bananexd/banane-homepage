@@ -1,7 +1,7 @@
 import { Box, Center, Container, Text, Image, Flex, SimpleGrid, CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import React from "react";
 import { FaReact, FaDatabase, FaJs, FaCss3Alt, FaHtml5, FaNode } from 'react-icons/fa'
-import Banane from '../img/banane.jpg'
+import Banane from "../img/banane.jpg"
 import Animation from "../styles/Animation";
 
 const Skills = () => {

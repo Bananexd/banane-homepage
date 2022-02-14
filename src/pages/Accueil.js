@@ -1,4 +1,4 @@
-import { Avatar, Box, Center, Container, Divider, Flex, Heading, Spacer, Text, Image, Button, List, ListItem } from "@chakra-ui/react";
+import { Avatar, Box, Center, Container, Flex, Heading, Text, Image, Button, List, ListItem } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 import { Link } from "react-router-dom";
@@ -30,10 +30,10 @@ const Accueil = () => {
                     </Flex>
                 </Box>
                 <Box pt={8}>
-                    <Text fontSize='2xl' as='u' textUnderlineOffset={8} textDecorationColor="purple.300" textDecorationThickness={4}>Work</Text>
-                    <Text textAlign='justify' style={{ textIndent: 40 }} pb={4} pt={4}>Je suis un Étudiant en troisième année de Licence Informatique spécialisation Développement / DevOps. En parrallèle de mes études, je suis aussi Développeur Web Freelance depuis 2022. Mes missions principales sont la réalisation de site vitrine pour particulier ou entreprise ainsi que de site E-commerce.</Text>
+                    <Text fontSize='2xl' as='u' textUnderlineOffset={8} textDecorationColor="purple.300" textDecorationThickness={4}>Travail</Text>
+                    <Text textAlign='justify' style={{ textIndent: 40 }} pb={4} pt={4}>Je suis un Étudiant en troisième année de Licence Informatique spécialisation Développement / DevOps. En parallèle de mes études, je suis aussi Développeur Web Freelance depuis 2022. Mes missions principales sont la réalisation de site vitrine pour particulier ou entreprise ainsi que de site E-commerce.</Text>
                     <Center>
-                        <Button colorScheme="teal" rightIcon={<ArrowForwardIcon />}><Link to="/portfolio">Mon Portfolio</Link></Button>
+                        <Button colorScheme="purple" rightIcon={<ArrowForwardIcon />}><Link to="/portfolio">Mon Portfolio</Link></Button>
                     </Center>
                 </Box>
                 <Box pt={8}>
@@ -63,10 +63,10 @@ const Accueil = () => {
                     <Text fontSize='2xl' as='u' textUnderlineOffset={8} textDecorationColor="purple.300" textDecorationThickness={4}>Réseaux</Text>
                     <List>
                         <ListItem>
-                            <Button pt={8} leftIcon={<FaGithub/>} variant='link'><a href="https://github.com/BananeSensei" target='_blank'>Github</a></Button>
+                            <Button pt={8} leftIcon={<FaGithub/>} variant='link'><a href="https://github.com/BananeSensei" target='_blank' rel="noreferrer">Github</a></Button>
                         </ListItem>
                         <ListItem>
-                            <Button pt={4} leftIcon={<FaLinkedinIn/>} variant='link'><a href="https://www.linkedin.com/in/alexis-crapet-3b928317a/" target='_blank'>LinkedIn</a></Button>
+                            <Button pt={4} leftIcon={<FaLinkedinIn/>} variant='link'><a href="https://www.linkedin.com/in/alexis-crapet-3b928317a/" target='_blank' rel="noreferrer">LinkedIn</a></Button>
                         </ListItem>
                     </List>
                 </Box>

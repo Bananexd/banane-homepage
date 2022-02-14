@@ -1,8 +1,8 @@
-import { Box, Button, Container, Flex, Heading, Icon, Spacer } from "@chakra-ui/react";
-import { SunIcon } from "@chakra-ui/icons";
+import { Box, Button, Container, Flex, Heading, Spacer } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import ToggleColor from "./ToggleColor";
+import { EmailIcon } from "@chakra-ui/icons";
 
 const NavBar = () => {
     return (
@@ -17,9 +17,12 @@ const NavBar = () => {
                     <Link to="/portfolio">Portfolio</Link>
                 </Button>
                 <Button mr={4} variant='link'>
-                    <Link to="/skills">Compétences</Link>
+                    <Link to="/competences">Compétences</Link>
                 </Button>
                 <Spacer />
+                <Button mr={4} colorScheme='purple' leftIcon={<EmailIcon/>}>
+                    <a href="mailto:crapet.alexis59@gmail.com">Contactez-moi</a>
+                </Button>
                 <ToggleColor />
             </Flex>
         </Box>
