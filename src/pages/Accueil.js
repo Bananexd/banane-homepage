@@ -15,7 +15,7 @@ const Accueil = () => {
             <Animation>
                 <Box bg='#2c313c' borderRadius='lg' color='white'>
                     <Center>
-                        <Text fontSize='lg'>Bonjour, Je suis Développeur Freelance</Text>
+                        <Text fontSize='lg'>Bonjour, Je suis Développeur Freelance.</Text>
                     </Center>
                 </Box>
                 <Box pt={6}>
